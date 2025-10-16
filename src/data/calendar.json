@@ -1,0 +1,54 @@
+[
+    {
+        "name": "New Year's Day",
+        "date": "2025-01-01"
+    },
+    {
+        "name": "Australia Day",
+        "date": "2025-01-26"
+    },
+    {
+        "name": "Valentine's Day",
+        "date": "2025-02-14"
+    },
+    {
+        "name": "Labour Day (VIC)",
+        "date": "2025-03-10"
+    },
+    {
+        "name": "Easter Sunday",
+        "date": "2025-04-20"
+    },
+    {
+        "name": "ANZAC Day",
+        "date": "2025-04-25"
+    },
+    {
+        "name": "King's Birthday",
+        "date": "2025-06-09"
+    },
+    {
+        "name": "NAIDOC Week Start",
+        "date": "2025-07-06"
+    },
+    {
+        "name": "Halloween",
+        "date": "2025-10-31"
+    },
+    {
+        "name": "Melbourne Cup",
+        "date": "2025-11-04"
+    },
+    {
+        "name": "Christmas Day",
+        "date": "2025-12-25"
+    },
+    {
+        "name": "Boxing Day",
+        "date": "2025-12-26"
+    },
+    {
+        "name": "New Year's Eve",
+        "date": "2025-12-31"
+    }
+]

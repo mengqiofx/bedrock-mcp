@@ -1,0 +1,101 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Backend Server (ts-node)",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/server.ts",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "envFile": "${workspaceFolder}/.env",
+            "sourceMaps": true,
+            "restart": true,
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Debug Backend Server (Built JS)",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/server.js",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "envFile": "${workspaceFolder}/.env",
+            "sourceMaps": true,
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "preLaunchTask": "Build Backend"
+        },
+        {
+            "name": "Attach to Backend Server",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "restart": true,
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "${workspaceFolder}",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Debug MCP Server",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/mcp/mcp-server.ts",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "envFile": "${workspaceFolder}/.env",
+            "sourceMaps": true,
+            "restart": true,
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Debug MCP Test Script",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/test-mcp.ts",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "envFile": "${workspaceFolder}/.env",
+            "sourceMaps": true,
+            "restart": true,
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
